@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14097DB02AC22A8C00CA77F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DAF2AC22A8C00CA77F8 /* AppDelegate.swift */; };
+		14097DB22AC22A8C00CA77F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DB12AC22A8C00CA77F8 /* SceneDelegate.swift */; };
+		14097DB42AC22A8C00CA77F8 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DB32AC22A8C00CA77F8 /* WeatherViewController.swift */; };
+		14097DB92AC22A8F00CA77F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14097DB82AC22A8F00CA77F8 /* Assets.xcassets */; };
+		14097DBC2AC22A8F00CA77F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14097DBA2AC22A8F00CA77F8 /* LaunchScreen.storyboard */; };
+		14097DCC2AC230E700CA77F8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DCB2AC230E700CA77F8 /* LocationManager.swift */; };
+		14097DCE2AC230EF00CA77F8 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DCD2AC230EF00CA77F8 /* IAPManager.swift */; };
+		14097DD02AC230FC00CA77F8 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DCF2AC230FC00CA77F8 /* WeatherManager.swift */; };
+		14097DD22AC2329600CA77F8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DD12AC2329600CA77F8 /* SettingsViewController.swift */; };
+		14097DD42AC232BD00CA77F8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DD32AC232BD00CA77F8 /* TabBarViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14097DAC2AC22A8C00CA77F8 /* BrightSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14097DAF2AC22A8C00CA77F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14097DB12AC22A8C00CA77F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		14097DB32AC22A8C00CA77F8 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		14097DB82AC22A8F00CA77F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14097DBB2AC22A8F00CA77F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14097DBD2AC22A8F00CA77F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14097DC32AC22E4C00CA77F8 /* BrightSkyDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrightSkyDebug.entitlements; sourceTree = "<group>"; };
+		14097DCB2AC230E700CA77F8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		14097DCD2AC230EF00CA77F8 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		14097DCF2AC230FC00CA77F8 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		14097DD12AC2329600CA77F8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		14097DD32AC232BD00CA77F8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14097DA92AC22A8C00CA77F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14097DA32AC22A8C00CA77F8 = {
+			isa = PBXGroup;
+			children = (
+				14097DAE2AC22A8C00CA77F8 /* BrightSky */,
+				14097DAD2AC22A8C00CA77F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14097DAD2AC22A8C00CA77F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14097DAC2AC22A8C00CA77F8 /* BrightSky.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14097DAE2AC22A8C00CA77F8 /* BrightSky */ = {
+			isa = PBXGroup;
+			children = (
+				14097DC92AC22FDC00CA77F8 /* Resources */,
+				14097DC82AC22FB400CA77F8 /* Application */,
+				14097DCA2AC2309800CA77F8 /* Managers */,
+				14097DC72AC22F9E00CA77F8 /* Controllers */,
+				14097DC62AC22F7300CA77F8 /* Models */,
+				14097DC52AC22F6C00CA77F8 /* Views */,
+				14097DC42AC22F6500CA77F8 /* ViewModels */,
+				14097DC32AC22E4C00CA77F8 /* BrightSkyDebug.entitlements */,
+			);
+			path = BrightSky;
+			sourceTree = "<group>";
+		};
+		14097DC42AC22F6500CA77F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14097DC52AC22F6C00CA77F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14097DC62AC22F7300CA77F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14097DC72AC22F9E00CA77F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				14097DB32AC22A8C00CA77F8 /* WeatherViewController.swift */,
+				14097DD12AC2329600CA77F8 /* SettingsViewController.swift */,
+				14097DD32AC232BD00CA77F8 /* TabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		14097DC82AC22FB400CA77F8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				14097DAF2AC22A8C00CA77F8 /* AppDelegate.swift */,
+				14097DB12AC22A8C00CA77F8 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		14097DC92AC22FDC00CA77F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14097DB82AC22A8F00CA77F8 /* Assets.xcassets */,
+				14097DBA2AC22A8F00CA77F8 /* LaunchScreen.storyboard */,
+				14097DBD2AC22A8F00CA77F8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14097DCA2AC2309800CA77F8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				14097DCB2AC230E700CA77F8 /* LocationManager.swift */,
+				14097DCD2AC230EF00CA77F8 /* IAPManager.swift */,
+				14097DCF2AC230FC00CA77F8 /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14097DAB2AC22A8C00CA77F8 /* BrightSky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14097DC02AC22A8F00CA77F8 /* Build configuration list for PBXNativeTarget "BrightSky" */;
+			buildPhases = (
+				14097DA82AC22A8C00CA77F8 /* Sources */,
+				14097DA92AC22A8C00CA77F8 /* Frameworks */,
+				14097DAA2AC22A8C00CA77F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrightSky;
+			productName = BrightSky;
+			productReference = 14097DAC2AC22A8C00CA77F8 /* BrightSky.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14097DA42AC22A8C00CA77F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					14097DAB2AC22A8C00CA77F8 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 14097DA72AC22A8C00CA77F8 /* Build configuration list for PBXProject "BrightSky" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14097DA32AC22A8C00CA77F8;
+			productRefGroup = 14097DAD2AC22A8C00CA77F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14097DAB2AC22A8C00CA77F8 /* BrightSky */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14097DAA2AC22A8C00CA77F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14097DBC2AC22A8F00CA77F8 /* LaunchScreen.storyboard in Resources */,
+				14097DB92AC22A8F00CA77F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14097DA82AC22A8C00CA77F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14097DD42AC232BD00CA77F8 /* TabBarViewController.swift in Sources */,
+				14097DD02AC230FC00CA77F8 /* WeatherManager.swift in Sources */,
+				14097DB42AC22A8C00CA77F8 /* WeatherViewController.swift in Sources */,
+				14097DD22AC2329600CA77F8 /* SettingsViewController.swift in Sources */,
+				14097DCE2AC230EF00CA77F8 /* IAPManager.swift in Sources */,
+				14097DB02AC22A8C00CA77F8 /* AppDelegate.swift in Sources */,
+				14097DB22AC22A8C00CA77F8 /* SceneDelegate.swift in Sources */,
+				14097DCC2AC230E700CA77F8 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14097DBA2AC22A8F00CA77F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14097DBB2AC22A8F00CA77F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14097DBE2AC22A8F00CA77F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14097DBF2AC22A8F00CA77F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14097DC12AC22A8F00CA77F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrightSky/BrightSkyDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTUAP2Z2QF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrightSky/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.njdevelopment.BrightSky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14097DC22AC22A8F00CA77F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTUAP2Z2QF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrightSky/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.njdevelopment.BrightSky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14097DA72AC22A8C00CA77F8 /* Build configuration list for PBXProject "BrightSky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14097DBE2AC22A8F00CA77F8 /* Debug */,
+				14097DBF2AC22A8F00CA77F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14097DC02AC22A8F00CA77F8 /* Build configuration list for PBXNativeTarget "BrightSky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14097DC12AC22A8F00CA77F8 /* Debug */,
+				14097DC22AC22A8F00CA77F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14097DA42AC22A8C00CA77F8 /* Project object */;
+}
