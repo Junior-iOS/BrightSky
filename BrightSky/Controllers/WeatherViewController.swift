@@ -8,12 +8,24 @@
 import UIKit
 
 class WeatherViewController: UIViewController {
+    
+    private let weatherView = WeatherView()
+    
+    override func loadView() {
+        super.loadView()
+        self.view = weatherView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .systemBackground
+        getLocation()
     }
-
+    
+    private func getLocation() {
+        LocationManager.shared.getCurrentLocation { location in
+            WeatherManager.shared.getWeather(for: location) {
+                
+            }
+        }
+    }
 }
-
