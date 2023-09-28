@@ -10,6 +10,7 @@ import UIKit
 class WeatherViewController: UIViewController {
     
     private let weatherView = WeatherView()
+    private let viewModel: WeatherViewModel
     
     override func loadView() {
         super.loadView()
@@ -18,14 +19,16 @@ class WeatherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getLocation()
+        viewModel.getLocation(from: weatherView)
     }
     
-    private func getLocation() {
-        LocationManager.shared.getCurrentLocation { location in
-            WeatherManager.shared.getWeather(for: location) {
-                
-            }
-        }
+    init(viewModel: WeatherViewModel = WeatherViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder aDecoder: NSCoder) {
+        nil
     }
 }
