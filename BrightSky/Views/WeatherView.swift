@@ -8,7 +8,7 @@
 import UIKit
 
 class WeatherView: UIView {
-    private var collectionView: UICollectionView?
+    private(set) var collectionView: UICollectionView?
     private var viewModel: [CurrentWeatherViewModel] = []
     
     override init(frame: CGRect) {
@@ -122,8 +122,8 @@ extension WeatherView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch viewModel[section] {
         case .current: return 1
-        case .daily(let viewModel): return viewModel.count
         case .hourly(let viewModel): return viewModel.count
+        case .daily(let viewModel): return viewModel.count
         }
     }
     
@@ -138,19 +138,21 @@ extension WeatherView: UICollectionViewDataSource {
             
             cell.configure(with: viewModel)
             return cell
-        case .daily(let viewModels):
+            
+        case .hourly(let viewModels):
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: DailyWeatherCell.identifier,
-                for: indexPath) as? DailyWeatherCell else {
+                withReuseIdentifier: HourlyWeatherCell.identifier,
+                for: indexPath) as? HourlyWeatherCell else {
                 return UICollectionViewCell()
             }
             
             cell.configure(with: viewModels[indexPath.row])
             return cell
-        case .hourly(let viewModels):
+            
+        case .daily(let viewModels):
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: HourlyWeatherCell.identifier,
-                for: indexPath) as? HourlyWeatherCell else {
+                withReuseIdentifier: DailyWeatherCell.identifier,
+                for: indexPath) as? DailyWeatherCell else {
                 return UICollectionViewCell()
             }
             

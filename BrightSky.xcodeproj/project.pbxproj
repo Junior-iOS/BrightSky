@@ -20,6 +20,7 @@
 		14097DD62AC238CA00CA77F8 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DD52AC238CA00CA77F8 /* WeatherView.swift */; };
 		14097DD82AC238D200CA77F8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DD72AC238D200CA77F8 /* SettingsView.swift */; };
 		14097DDA2AC27DC200CA77F8 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DD92AC27DC200CA77F8 /* SettingsViewViewModel.swift */; };
+		142B48712ACE7A15002A1122 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B48702ACE7A15002A1122 /* UnitConverter.swift */; };
 		14A335A02AC5244900458414 /* CurrentWeatherSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3359F2AC5244900458414 /* CurrentWeatherSection.swift */; };
 		14A335A32AC5275F00458414 /* HourlyWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A335A22AC5275F00458414 /* HourlyWeatherCell.swift */; };
 		14A335A62AC5287800458414 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A335A52AC5287800458414 /* UIView+Extensions.swift */; };
@@ -49,6 +50,7 @@
 		14097DD52AC238CA00CA77F8 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		14097DD72AC238D200CA77F8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		14097DD92AC27DC200CA77F8 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
+		142B48702ACE7A15002A1122 /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
 		14A3359F2AC5244900458414 /* CurrentWeatherSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherSection.swift; sourceTree = "<group>"; };
 		14A335A22AC5275F00458414 /* HourlyWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCell.swift; sourceTree = "<group>"; };
 		14A335A52AC5287800458414 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -108,10 +110,10 @@
 		14097DC42AC22F6500CA77F8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				14A335B52AC544A100458414 /* WeatherViewModel.swift */,
 				14A335B12AC537CF00458414 /* CurrentWeatherViewModel.swift */,
 				14A335B32AC5447F00458414 /* View */,
 				14A335B42AC5448800458414 /* Cell */,
-				14A335B52AC544A100458414 /* WeatherViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				14A3359F2AC5244900458414 /* CurrentWeatherSection.swift */,
+				142B48702ACE7A15002A1122 /* UnitConverter.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,8 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				14A335A92AC52A3B00458414 /* CurrentWeatherCell.swift */,
-				14A335A72AC52A2900458414 /* DailyWeatherCell.swift */,
 				14A335A22AC5275F00458414 /* HourlyWeatherCell.swift */,
+				14A335A72AC52A2900458414 /* DailyWeatherCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -210,8 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				14A335AB2AC5356E00458414 /* CurrentWeatherCellViewModel.swift */,
-				14A335AD2AC5357B00458414 /* DailyWeatherCellViewModel.swift */,
 				14A335AF2AC5359600458414 /* HourlyWeatherCellViewModel.swift */,
+				14A335AD2AC5357B00458414 /* DailyWeatherCellViewModel.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				14097DB42AC22A8C00CA77F8 /* WeatherViewController.swift in Sources */,
 				14097DD22AC2329600CA77F8 /* SettingsViewController.swift in Sources */,
 				14A335B22AC537CF00458414 /* CurrentWeatherViewModel.swift in Sources */,
+				142B48712ACE7A15002A1122 /* UnitConverter.swift in Sources */,
 				14A335A32AC5275F00458414 /* HourlyWeatherCell.swift in Sources */,
 				14097DCE2AC230EF00CA77F8 /* IAPManager.swift in Sources */,
 				14A335B62AC544A100458414 /* WeatherViewModel.swift in Sources */,

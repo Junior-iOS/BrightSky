@@ -10,13 +10,15 @@ import WeatherKit
 
 final class CurrentWeatherCellViewModel {
     private let model: CurrentWeather
+    private let unit: UnitTemperature
     
-    init(model: CurrentWeather) {
+    init(model: CurrentWeather, unit: UnitTemperature = .celsius) {
         self.model = model
+        self.unit = unit
     }
     
     public var temperature: String {
-        return model.temperature.description
+        return UnitConverter.shared.convertUnit(for: model.temperature, with: unit)
     }
     
     public var condition: String {
