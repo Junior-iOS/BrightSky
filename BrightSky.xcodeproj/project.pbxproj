@@ -24,6 +24,7 @@
 		142B48742ACFC81E002A1122 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 142B48732ACFC81E002A1122 /* RevenueCat */; };
 		142B48762ACFC81E002A1122 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 142B48752ACFC81E002A1122 /* RevenueCatUI */; };
 		142B48792AD25BDD002A1122 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 142B48782AD25BDC002A1122 /* StoreKitTestCertificate.cer */; };
+		142B487B2AD3B5FF002A1122 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B487A2AD3B5FF002A1122 /* Bundle+Extensions.swift */; };
 		14A335A02AC5244900458414 /* CurrentWeatherSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3359F2AC5244900458414 /* CurrentWeatherSection.swift */; };
 		14A335A32AC5275F00458414 /* HourlyWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A335A22AC5275F00458414 /* HourlyWeatherCell.swift */; };
 		14A335A62AC5287800458414 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A335A52AC5287800458414 /* UIView+Extensions.swift */; };
@@ -56,6 +57,7 @@
 		142B48702ACE7A15002A1122 /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
 		142B48772ACFCF6C002A1122 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = file; name = Configuration.storekit; path = BrightSky/Configuration.storekit; sourceTree = SOURCE_ROOT; };
 		142B48782AD25BDC002A1122 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = SOURCE_ROOT; };
+		142B487A2AD3B5FF002A1122 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		14A3359F2AC5244900458414 /* CurrentWeatherSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherSection.swift; sourceTree = "<group>"; };
 		14A335A22AC5275F00458414 /* HourlyWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCell.swift; sourceTree = "<group>"; };
 		14A335A52AC5287800458414 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				14A335A52AC5287800458414 /* UIView+Extensions.swift */,
+				142B487A2AD3B5FF002A1122 /* Bundle+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142B487B2AD3B5FF002A1122 /* Bundle+Extensions.swift in Sources */,
 				14A335A62AC5287800458414 /* UIView+Extensions.swift in Sources */,
 				14A335AC2AC5356E00458414 /* CurrentWeatherCellViewModel.swift in Sources */,
 				14A335AA2AC52A3B00458414 /* CurrentWeatherCell.swift in Sources */,
@@ -486,6 +490,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.njdevelopment.BrightSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SECRET = appl_nHvtNeNxqZAFgdweMuChDWEXgYu;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,6 +518,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.njdevelopment.BrightSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SECRET = appl_nHvtNeNxqZAFgdweMuChDWEXgYu;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
