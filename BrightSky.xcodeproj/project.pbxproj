@@ -21,6 +21,9 @@
 		14097DD82AC238D200CA77F8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DD72AC238D200CA77F8 /* SettingsView.swift */; };
 		14097DDA2AC27DC200CA77F8 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14097DD92AC27DC200CA77F8 /* SettingsViewViewModel.swift */; };
 		142B48712ACE7A15002A1122 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B48702ACE7A15002A1122 /* UnitConverter.swift */; };
+		142B48742ACFC81E002A1122 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 142B48732ACFC81E002A1122 /* RevenueCat */; };
+		142B48762ACFC81E002A1122 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 142B48752ACFC81E002A1122 /* RevenueCatUI */; };
+		142B48792AD25BDD002A1122 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 142B48782AD25BDC002A1122 /* StoreKitTestCertificate.cer */; };
 		14A335A02AC5244900458414 /* CurrentWeatherSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A3359F2AC5244900458414 /* CurrentWeatherSection.swift */; };
 		14A335A32AC5275F00458414 /* HourlyWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A335A22AC5275F00458414 /* HourlyWeatherCell.swift */; };
 		14A335A62AC5287800458414 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A335A52AC5287800458414 /* UIView+Extensions.swift */; };
@@ -51,6 +54,8 @@
 		14097DD72AC238D200CA77F8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		14097DD92AC27DC200CA77F8 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
 		142B48702ACE7A15002A1122 /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
+		142B48772ACFCF6C002A1122 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = file; name = Configuration.storekit; path = BrightSky/Configuration.storekit; sourceTree = SOURCE_ROOT; };
+		142B48782AD25BDC002A1122 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = SOURCE_ROOT; };
 		14A3359F2AC5244900458414 /* CurrentWeatherSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherSection.swift; sourceTree = "<group>"; };
 		14A335A22AC5275F00458414 /* HourlyWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCell.swift; sourceTree = "<group>"; };
 		14A335A52AC5287800458414 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -68,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142B48762ACFC81E002A1122 /* RevenueCatUI in Frameworks */,
+				142B48742ACFC81E002A1122 /* RevenueCat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				14097DAF2AC22A8C00CA77F8 /* AppDelegate.swift */,
+				142B48772ACFCF6C002A1122 /* Configuration.storekit */,
+				142B48782AD25BDC002A1122 /* StoreKitTestCertificate.cer */,
 				14097DB12AC22A8C00CA77F8 /* SceneDelegate.swift */,
 			);
 			path = Application;
@@ -235,6 +244,10 @@
 			dependencies = (
 			);
 			name = BrightSky;
+			packageProductDependencies = (
+				142B48732ACFC81E002A1122 /* RevenueCat */,
+				142B48752ACFC81E002A1122 /* RevenueCatUI */,
+			);
 			productName = BrightSky;
 			productReference = 14097DAC2AC22A8C00CA77F8 /* BrightSky.app */;
 			productType = "com.apple.product-type.application";
@@ -263,6 +276,9 @@
 				Base,
 			);
 			mainGroup = 14097DA32AC22A8C00CA77F8;
+			packageReferences = (
+				142B48722ACFC81D002A1122 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
 			productRefGroup = 14097DAD2AC22A8C00CA77F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,6 +295,7 @@
 			files = (
 				14097DBC2AC22A8F00CA77F8 /* LaunchScreen.storyboard in Resources */,
 				14097DB92AC22A8F00CA77F8 /* Assets.xcassets in Resources */,
+				142B48792AD25BDD002A1122 /* StoreKitTestCertificate.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +541,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		142B48722ACFC81D002A1122 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.27.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		142B48732ACFC81E002A1122 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 142B48722ACFC81D002A1122 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		142B48752ACFC81E002A1122 /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 142B48722ACFC81D002A1122 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCatUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14097DA42AC22A8C00CA77F8 /* Project object */;
 }

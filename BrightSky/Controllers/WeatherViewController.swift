@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RevenueCat
+import RevenueCatUI
 
 class WeatherViewController: UIViewController {
     
@@ -25,14 +27,17 @@ class WeatherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.getLocation(from: weatherView, unit: .celsius)
         addBarButtonItem()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.getLocation(from: weatherView, unit: .celsius)
     }
     
     init(viewModel: WeatherViewModel = WeatherViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        self.viewModel.delegate = self
     }
     
     @available(*, unavailable)
@@ -63,12 +68,20 @@ class WeatherViewController: UIViewController {
     }
     
     @objc private func didTapUpgrade() {
-        print("didTapUpgrade")
+        let vc = PaywallViewController()
+        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-extension WeatherViewController: WeatherViewDelegate {
-    func updateView() {
-        weatherView.collectionView?.reloadData()
+// MARK: PaywallController Delegate
+extension WeatherViewController: PaywallViewControllerDelegate {
+    func paywallViewController(_ controller: PaywallViewController, didFinishPurchasingWith customerInfo: CustomerInfo) {
+        navigationItem.rightBarButtonItem = nil
+        controller.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    func paywallViewController(_ controller: PaywallViewController, didFinishRestoringWith customerInfo: CustomerInfo) {
+        controller.navigationController?.popToRootViewController(animated: true)
     }
 }

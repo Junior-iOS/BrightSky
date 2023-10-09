@@ -57,7 +57,7 @@ class DailyWeatherCell: UICollectionViewCell {
             iconImage.heightAnchor.constraint(equalToConstant: 32),
             
             temperatureLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            temperatureLabel.leadingAnchor.constraint(equalTo: iconImage.trailingAnchor, constant: 20),
+            temperatureLabel.leadingAnchor.constraint(equalTo: iconImage.trailingAnchor, constant: 10),
             temperatureLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15)
         ])
     }

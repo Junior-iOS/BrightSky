@@ -7,28 +7,27 @@
 
 import Foundation
 
-protocol WeatherViewDelegate: AnyObject {
-    func updateView()
-}
-
 final class WeatherViewModel {
-    weak var delegate: WeatherViewDelegate?
-    
     func getLocation(from weatherView: WeatherView, unit: UnitTemperature) {
         LocationManager.shared.getCurrentLocation { location in
             WeatherManager.shared.getWeather(for: location) {
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     guard let currentWeather = WeatherManager.shared.currentWeather else { return }
                     let hourlyWeather = WeatherManager.shared.hourlyWeather
                     let dailyWeather = WeatherManager.shared.dailyWeather
                     
-                    weatherView.configure(with: [
+                    var viewModels: [CurrentWeatherViewModel] = [
                         .current(viewModel: .init(model: currentWeather, unit: unit)),
-                        .hourly(viewModel: hourlyWeather.compactMap({ .init(model: $0, unit: unit) })),
-                        .daily(viewModel: dailyWeather.compactMap({ .init(model: $0, unit: unit) }))
-                    ])
+                        .hourly(viewModel: hourlyWeather.compactMap({ .init(model: $0, unit: unit) }))
+                    ]
+                    weatherView.configure(with: viewModels)
                     
-                    self?.delegate?.updateView()
+                    IAPManager.shared.isSubscribed { subscribed in
+                        if subscribed {
+                            viewModels.append(.daily(viewModel: dailyWeather.compactMap({ .init(model: $0, unit: unit) })))
+                            weatherView.configure(with: viewModels)
+                        }
+                    }
                 }
             }
         }
